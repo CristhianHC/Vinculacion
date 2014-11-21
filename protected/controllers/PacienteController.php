@@ -3,7 +3,7 @@
 class PacienteController extends Controller {
 
     public function actionIndex() {
-    $records=Cliente::model()->findAll();
+    $records=Paciente::model()->findAll();
     
     $this->render('index',array(
         'records'=>$records,
