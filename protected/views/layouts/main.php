@@ -13,8 +13,7 @@
         <!--[if lt IE 8]>
         <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ie.css" media="screen, projection" />
         <![endif]-->
-        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
-        <!--incluimos un archivo javascript en este caso jquery -->
+       <!--incluimos un archivo javascript en este caso jquery -->
         <title><?php echo CHtml::encode($this->pageTitle); ?></title>
     </head>
     <body>
@@ -61,7 +60,7 @@
                             </ul>
                         </div>
                     </section>
-                    <section class="span9 container-fluid">
+                    <section class="span9">
                         <?php echo $content; ?>
                         <!-- Aqui va el contenido de las vistas -->
                     </section>
@@ -71,6 +70,8 @@
                     All Rights Reserved.<br/>
                 </div><!-- footer -->
             </div>
+            
         </section><!-- page -->
+        
     </body>
 </html>

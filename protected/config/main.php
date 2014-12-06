@@ -67,7 +67,7 @@ return array(
 		// uncomment the following to use a MySQL database
 		
 		'db'=>array(
-			'connectionString' => 'pgsql:host=localhost;port=5432;dbname=postgres',
+			'connectionString' => 'pgsql:host=localhost;port=5432;dbname=clinica',
 			'emulatePrepare' => true,
 			'username' => 'postgres',
 			'password' => 'PostgreSQL',

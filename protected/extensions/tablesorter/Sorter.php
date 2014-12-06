@@ -170,6 +170,21 @@ class Sorter extends CWidget {
                         echo "<a class='btn btn-small' href='" . $view_url . "'><i class='icon-search'></i></a> &nbsp;";
                 } else {
                     echo "<a class='btn btn-small' href='" . $view_url . "'><i class='icon-search'></i></a> &nbsp;";
+                       $this->widget('bootstrap.widgets.TbButton', array(
+            'htmlOptions'=>array(
+            'data-toggle'=>'modal',
+            'data-target'=>'#myModal',
+        ),
+    )); ?>
+    
+    <?php $this->beginWidget('bootstrap.widgets.TbModal', array('id'=>'myModal')); 
+ echo "<a class='btn btn-small' href='" . $view_url . "'><i class='icon-search'></i></a> &nbsp;";
+    ?>
+    
+           
+   <?php 
+    $this->endWidget(); 
+
                 }
                 if (isset($buttons[0]['edit'])) {
                     if ($buttons[0]['edit'] != 'disable')

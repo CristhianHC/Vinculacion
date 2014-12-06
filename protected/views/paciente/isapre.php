@@ -68,4 +68,18 @@ $this->widget('application.extensions.EFlot.EFlotGraphWidget',
         'htmlOptions'=>array('style'=>'width:400px;height:400px;')
     )
 );
-?>
+
+    $this->widget('bootstrap.widgets.TbButton', array(
+        'label'=>'Agregar Telefono',
+        'type'=>'primary',
+        'htmlOptions'=>array(
+            'data-toggle'=>'modal',
+            'data-target'=>'#myModal',
+        ),
+    )); ?>
+    
+    <?php $this->beginWidget('bootstrap.widgets.TbModal', array('id'=>'myModal')); ?>
+    
+           
+   <?php 
+    $this->endWidget(); 

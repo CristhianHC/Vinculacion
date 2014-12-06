@@ -24,7 +24,7 @@ $this->pageTitle = Yii::app()->name . " -Registro Paciente";
             <?php echo $form->labelEx($model, 'ruc', array('class' => 'control-label')); ?>
             <div class="controls">
                 <?php
-                echo $form->textField($model, 'ruc', array('class' => 'input-xlarge'));
+                echo $form->textField($model, 'ruc', array('class' => 'input-xlarge',));
                 echo $form->error($model, 'ruc', array('class' => 'text-error'));
                 ?>
             </div>

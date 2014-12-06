@@ -1,26 +1,12 @@
 <?php
 
-/**
- * This is the model class for table "cliente".
- *
- * The followings are the available columns in table 'cliente':
- * @property integer $id
- * @property string $nombre
- * @property string $direccion
- */
-class Paciente extends CActiveRecord
+class Cliente extends CActiveRecord
 {
-	/**
-	 * @return string the associated database table name
-	 */
 	public function tableName()
 	{
 		return 'cliente';
 	}
 
-	/**
-	 * @return array validation rules for model attributes.
-	 */
 	public function rules()
 	{
 		// NOTE: you should only define rules for those attributes that
